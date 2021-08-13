@@ -6,6 +6,8 @@
 
 非直播时间可以加入互动群([1129416004](https://jq.qq.com/?_wv=1027&k=FhuuBejY))讨论。
 
+- 2020-08-13: [233.数字 1 的个数](233.md) [1946.子字符串突变后可能得到的最大整数](1946.md) [16.09 面试题 16.09. 运算](16.09.md)
+- 2020-08-10 至 2020-08-12: 手术请假
 - 2020-08-09: 按照预定切超级难题 [1728. 猫和老鼠 II](1728.md)
 - 2020-08-08: 连切了几道简单题，几乎没有难度，就不写题解了，题号[1137](https://leetcode-cn.com/problems/n-th-tribonacci-number/), [1706](https://leetcode-cn.com/problems/where-will-the-ball-fall/), [1465](https://leetcode-cn.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/), [1432](https://leetcode-cn.com/problems/max-difference-you-can-get-from-changing-an-integer/)，唯一稍微值得一写的[5839](5839.md)
 - 2020-08-07: [457.环形数组是否存在循环](457.md) [1769.移动所有球到每个盒子所需的最小操作数](1769.md)
