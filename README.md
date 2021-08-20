@@ -22,4 +22,5 @@
 
 ## CodeWars 记录
 
+- 2020-08-19: [The position of a digital string in a infinite digital string](codewars/582c1092306063791c000c00.md)
 - 2020-08-18: [6 By 6 Skycrapers](codewars/5679d5a3f2272011d700000d.md)
