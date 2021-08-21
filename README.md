@@ -25,3 +25,7 @@
 
 - 2020-08-19: [The position of a digital string in a infinite digital string](codewars/582c1092306063791c000c00.md)
 - 2020-08-18: [6 By 6 Skycrapers](codewars/5679d5a3f2272011d700000d.md)
+
+## 其它记录
+
+- 2020-08-21：模 2 同余矩阵的巧妙应用：[POJ 开关问题三题联讲](poj/1222_1753_3279.md) + [一个对 int64 进行随机一一映射的算法](other/int64_hash.md)
