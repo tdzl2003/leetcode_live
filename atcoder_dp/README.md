@@ -303,8 +303,10 @@ $$
 (1 - \frac{w}{n})DP[w][x][y][z] = 1 + & \frac{x}{n}DP[w+1][x-1][y][z] +
   \frac{y}{n}DP[w][x+1][y-1][z] +
   \frac{z}{n}DP[w][x][y+1][z-1] \\
-\end{aligned} \\
+\end{aligned}
+$$
 
+$$
 \begin{aligned}
 DP[w][x][y][z] = & \frac{1 + \frac{x}{n}DP[w+1][x-1][y][z] +
   \frac{y}{n}DP[w][x+1][y-1][z]  +
