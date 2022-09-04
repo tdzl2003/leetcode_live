@@ -177,11 +177,11 @@ min(DP[j] - H[j]) + H[i] & H[j] \lt H[i]
 \end{cases}
 $$
 
-因为$H[i]$的范围有限，所以其实就是针对高度的范围 min query，这里可以使用线段树解决。
+因为 $H[i]$ 的范围有限，所以其实就是针对高度的范围 min query，这里可以使用线段树解决。
 
 复杂的地方在于相同高度可能有多个值，维护需要另外用一个 multimap
 
-> 实际上 $Nlg(H)+Nlg(K)$ 没比暴力 $NK$ 好多少
+> 实际上 $NlgH+NlgK$ 没比暴力 $NK$ 好多少
 
 [代码](https://atcoder.jp/contests/dp/submissions/34521005)
 
