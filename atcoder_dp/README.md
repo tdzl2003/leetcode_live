@@ -237,8 +237,10 @@ $$
 注意可以证明
 
 $$
-DP[i-1][j]\le DP[i-1][j-1]+1 \\
-DP[i][j-1]\le DP[i-1][j-1]+1
+\begin{align}
+DP[i-1][j]\le & DP[i-1][j-1]+1 \\
+DP[i][j-1]\le  &DP[i-1][j-1]+1
+\end{align}
 $$
 
 所以递推可以简化为：
@@ -257,9 +259,9 @@ $$
 另外 LCS 还有[基于位运算的优化](https://www.cnblogs.com/-Wallace-/p/bit-lcs.html)，思路是把 DP 函数转化为差分数组，然后可以用位运算稍微加速一些。但即使用这种思路，也仍然得记录下每一行才能正确的找到解。
 
 > 差分数组的前缀和就是 DP 数组，实际表达的是 s 的前缀和 t 的 LCS 长度，但是这个 LCS 未必是 s 和 t 的 LCS 的前缀 \
-> 如 arbc 和 abcr， DP[2][4] = 2，表达'ar'这个前缀，但是整体的 LCS 是 'abc'
+> 如 abcr 和 arbc， DP[4][2] = 2，表达 LCS(abcr,ar)=ar，但是 LCS(abcr,arbc) = abc
 
-可以看出，当 $s[i-1] \ne t[j-1]$ 如果 $M[i][j] = 0$ ，那么有 $DP[i][j] = DP[i][j-1]$ ，因此一定可以选择向左移动。否则，必须选择向上移动。
+但是可以看出，当 $s[i-1] \ne t[j-1]$ 时，如果 $M[i][j] = 0$ ，那么有 $DP[i][j] = DP[i][j-1]$ ，因此一定可以选择向左移动。否则，必须选择向上移动。
 
 [位运算优化代码](https://atcoder.jp/contests/dp/submissions/34604402)
 
@@ -283,7 +285,7 @@ DAG 需要出边的临接表，并记录入边数量。为了方便，这里可�
 
 # I - Coins
 
-概率计算。目标是求$tails < heads$ 的数量，转换一下可以得到 $ tails < \frac{N}{2}$ 。用表计算每个 tails 的数量的概率，并且只需要记录到 $\lfloor\frac{N}{2}\rfloor$ 为止。
+概率计算。目标是求$tails \le heads$ 的数量，转换一下可以得到 $ tails \le \frac{N}{2}$ 。用表计算每个 tails 的数量的概率，并且只需要记录到 $\lfloor\frac{N}{2}\rfloor$ 为止。
 
 $$
 DP[i][j] = DP[i-1][j] * p[i] + DP[i-1][j-1] * (1-p[i])
