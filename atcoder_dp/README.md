@@ -380,7 +380,7 @@ $$
 DP_{l,r} = max(a_l - DP_{l+1,r}, a_r - DP_{l,r-1})
 $$
 
-计算顺序上要确保由短及长，因此可以按$r-l$的顺序来计算。
+计算顺序上要确保由短及长，因此可以按 $r-l$ 的顺序来计算。
 
 [代码](https://atcoder.jp/contests/dp/submissions/34623200)
 
