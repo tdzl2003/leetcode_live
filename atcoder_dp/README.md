@@ -436,10 +436,10 @@ $$
 c_{i,j} = min_{k_0 \le k \le k_1}\{c_{i,k}+c_{k+1,j}\} +  \Sigma_{k=0}^{j}w_k
 $$
 
-那么当前串的最佳分割点一定在它们之间。粗暴的理解的话，就是 $k_0$ 加入 $w_j$后，右边变的更重了，而 $k_1$ 加入 $w_i$ 后，左边变的更重了，所以最佳答案应该在他们之间。Howto 严格的证明？
+那么当前串的最佳分割点一定在它们之间。直观的理解的话，就是 $k_0$ 加入 $w_j$后，右边变的更重了，而 $k_1$ 加入 $w_i$ 后，左边变的更重了，所以最佳答案应该在他们之间。
+
+严格证明见[OIWiki: 四边形不等式优化](https://oi-wiki.org/dp/opt/quadrangle/)
 
 之后的计算过程，计算指定长度的时候，对每个不同的 i，对应的 k 范围恰好是一个连续序列（相邻的重叠一个元素），所以可以 $O(N)$ 时间连续求出。后面的加成部分也可以用前缀和或滑窗连续计算求出。总计 $O(N^2)$ 。
 
-nlgn 算法称为[Hu-Tucker Algorithm](https://math.mit.edu/~shor/PAM/hu-tucker_algorithm.html)，证明据说更加的难了。
-
-这里也找到了一个相应的[中文解释](https://blog.csdn.net/qq_40691051/article/details/102857970)
+nlgn 算法称为[Hu-Tucker Algorithm](https://math.mit.edu/~shor/PAM/hu-tucker_algorithm.html)，证明据说更加的难了。这里不详细分析了（我自己还在学习中）
