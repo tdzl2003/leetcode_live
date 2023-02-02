@@ -87,6 +87,7 @@ $$
 * 卷积（AtCoderLibrary里有[现成的](https://github.com/atcoder/ac-library/blob/master/atcoder/convolution.hpp)），建议背板/抄板，不建议死磕原理。
 * [母函数/生成函数](https://blog.csdn.net/qq_41357771/article/details/83449481)：常用于通过递推公式求解通项公式（不过通常包含无理数和指数函数，不适用于精确求解或者取模求解）。也有许多其它的用途。对于线性递推式来说，母函数的解通常和矩阵的特征值有某些奇妙的关联。
 * 更多高端的数学方法，如[超几何函数](https://baike.baidu.com/item/%E8%B6%85%E5%87%A0%E4%BD%95%E5%87%BD%E6%95%B0/2294635?fr=aladdin)
+* CDQ分治，其实是归并求逆序对算法的衍生
 
 # 例题
 
