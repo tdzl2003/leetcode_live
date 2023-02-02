@@ -86,6 +86,7 @@ $$
 * 矩阵，矩阵乘法：用矩阵乘法可快速求线性变换；很多幂求和问题都可以转换为线性变换问题；还利用轮换矩阵构造 $ B^k=I $ 来优化二项式间隔取数求和问题。
 * 卷积（AtCoderLibrary里有[现成的](https://github.com/atcoder/ac-library/blob/master/atcoder/convolution.hpp)），建议背板/抄板，不建议死磕原理。
 * [母函数/生成函数](https://blog.csdn.net/qq_41357771/article/details/83449481)：常用于通过递推公式求解通项公式（不过通常包含无理数和指数函数，不适用于精确求解或者取模求解）。也有许多其它的用途。对于线性递推式来说，母函数的解通常和矩阵的特征值有某些奇妙的关联。
+* 更多高端的数学方法，如[超几何函数](https://baike.baidu.com/item/%E8%B6%85%E5%87%A0%E4%BD%95%E5%87%BD%E6%95%B0/2294635?fr=aladdin)
 
 # 例题
 
@@ -427,3 +428,4 @@ $$
 * [AGC 059 C - Guessing Permutation for as Long as Possible](https://atcoder.jp/contests/agc059/tasks/agc059_c)
 * [AGC 059 F - LIDS](https://atcoder.jp/contests/agc059/tasks/agc059_f)
 * [ABC 279 Ex - Sum of Prod of Min](https://atcoder.jp/contests/abc279/tasks/abc279_h)
+* [一篇博客](https://www.luogu.com.cn/blog/foreverlasting/yi-lei-heng-deng-shi-di-ying-yong-zha-shi-liao-zha-shi-liao-post
