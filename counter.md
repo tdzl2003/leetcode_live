@@ -409,6 +409,10 @@ $$
 **代码**: [cpp](https://atcoder.jp/contests/agc060/submissions/37543788)
 
 
+## [偶数个5问题](https://blog.csdn.net/weixin_39491014/article/details/107262070)
+
+使用母函数求解
+
 # 其它题目
 
 * [ARC 154 E - Reverse and Inversion](https://atcoder.jp/contests/arc154/tasks/arc154_e)
