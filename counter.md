@@ -516,16 +516,44 @@ $$
 注意到这个公式和差集序列具体是什么没有关系，可以运用乘法原理求出总分数之和为$M^{N-1}N^M$，直接快速幂求解或调用modint的pow方法求解即可。
 
 
+## [ABC 285 Ex - Avoid Square Number](https://atcoder.jp/contests/abc285/tasks/abc285_h)
+
+**题意**： 给定数组 $E$ ，表示不同素数的数量，问有多少种方法构造 $N$ 个数，使没有任何数是完全平方数，并且所有数的乘积等于之前所有素数的乘积。
+
+**思路**： 完全平方数等价于每个素数的个数都是偶数，考虑单个素数，桶中是偶数个的组合数使用母函数表达为 $\frac{1}{1-x^2}$
+
+所以答案中总共有i个数的是偶数的组合数采用母函数表达为：
+
+$$
+\prod\frac{1}{(1-x^2)^i(1-x)^{n-i}} [x^{E_j}]
+$$
+
+其中中括号表示求对应项的系数
+
+用容斥原理，求得没有数是偶数的组合数为：
+
+$$
+\begin{align}
+&\sum_{i=0}^n(-1)^i{n \choose i}\prod\frac{1}{(1-x^2)^i(1-x)^{n-i}} [x^{E_j}] \\
+\end{align}
+$$
+
+中间的母函数随着i增加不断变化，相当于每次乘上$\frac{1-x}{1-x^2} = \frac{1}{1+x} = 1-x+x^2-x^3+...$，可通过变号前缀和完成。
+
+整体复杂度 $N*(K+max(E_i))$
+
+**代码**：[cpp](https://atcoder.jp/contests/abc285/submissions/38566694)
+
+
 # 其它题目
 
 * [ARC 154 E - Reverse and Inversion](https://atcoder.jp/contests/arc154/tasks/arc154_e)
     * [题解](https://atcoder.jp/contests/arc154/editorial/5599)，通过公式变形将原题公式变形成一个仅包含一个变量的求和公式（该公式还可以分解成两个部分，其中一部分值是固定的，另一部分是-iPi，结合求和，仅需关心对每个Pi，最终i的期望），从而接下来可以独立的看每个数。随后证明一个定理，如果一个元素参与了至少一次操作，它的分布是左右对称的，因此参与操作的元素i的期望就恰好为$\frac{N+1}{2}$ 。接下来可以在lgM时间内计算出每个元素参与至少一次操作的概率（组合数），如果未参与任何一次操作，它就保留在原始位置。从而可以计算出总的和。
-- 有个没找到的题目：N*M的矩形方格中有K个涂色的格子，问有多少个矩形包含了至少一个涂色的格子。
+* 有个没找到的题目：N*M的矩形方格中有K个涂色的格子，问有多少个矩形包含了至少一个涂色的格子。
 
 # 我自己的待研究题库（未来争取研究透下面每一道题！）
 
 * [ARC 154 F - Dice Game](https://atcoder.jp/contests/arc154/tasks/arc154_f)
-* [ABC 285 Ex - Avoid Square Number](https://atcoder.jp/contests/abc285/tasks/abc285_h)
 * [ARC 153 F - Tri-Colored Paths](https://atcoder.jp/contests/arc153/tasks/arc153_f)
 * [ABC 284 Ex - Count Unlabeled Graphs](https://atcoder.jp/contests/abc284/editorial/5495)
 * [AGC 060 C - Large Heap](https://atcoder.jp/contests/agc060/tasks/agc060_c)
