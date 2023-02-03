@@ -43,7 +43,7 @@
 
 ---
 
-## [ABC 281 G - Farthest City](https://atcoder.jp/contests/abc281/tasks/abc281_g)
+#### [ABC 281 G - Farthest City](https://atcoder.jp/contests/abc281/tasks/abc281_g)
 
 求有多少个无向图，满足N号顶点是唯一距离1号顶点最远的点。
 
@@ -198,12 +198,17 @@ $score(S)$表示1到M中每个数字出现次数的积
 * 用于求解线性递推式，尤其是二维线性递推式。
 * 压缩矩阵维度是关键。
 * 一维线性递推有不少时候都可以通过母函数得到一个更好的解，但是矩阵方法简单易学。
+* 许多字符串计数问题可以通过状态机转变为线性递推问题求解。
 
 ---
 
-## catcat
+#### 平铺问题
 
-**题意**：问有多少个长度为N的小写字母串，其中恰好出现了两次连续的cat
+$1\times 2$的方块平铺$3\times N$的矩形，问有多少种平铺方案？
+
+#### catcat
+
+问有多少个长度为N的小写字母串，其中恰好出现了两次连续的cat
 
 ---
 
@@ -235,7 +240,7 @@ $score(S)$表示1到M中每个数字出现次数的积
 
 ---
 
-## [偶数个5问题](https://blog.csdn.net/weixin_39491014/article/details/107262070)
+#### [偶数个5问题](https://blog.csdn.net/weixin_39491014/article/details/107262070)
 
 **题意**：问n位十进制数中，有多少个数中出现了偶数个5
 
