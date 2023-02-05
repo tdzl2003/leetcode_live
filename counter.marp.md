@@ -1,5 +1,5 @@
 
-# 组合计数常用数学工具概览
+# 组合计数题解串讲
 
 [@解题十分钟](https://space.bilibili.com/381371294)
 
@@ -67,7 +67,7 @@
 
 ---
 
-# 容斥原理
+# [容斥原理](https://oiwiki.com/math/combinatorics/inclusion-exclusion-principle/)
 
 * 简单表述：$|A\cup B| = |A|+|B|-|A \cap B|$
 * 注意复杂度，一般更常用于集合之间对称的情况。
