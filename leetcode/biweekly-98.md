@@ -12,7 +12,7 @@ T4：看数据范围采用二进制压缩加速是有希望暴力过掉的，我
 
 采用ATL的实现，群如下定义，其中S表示0的个数和1的个数，F表示翻转的次数奇偶性：
 
-```
+```cpp
 typedef pair<int, int> S;
 S op(S a, S b) {
     return make_pair(a.first + b.first, a.second + b.second);
