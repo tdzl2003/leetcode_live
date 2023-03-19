@@ -22,7 +22,7 @@ public:
     /* 倍增预处理2^k祖先节点，用于LCA等 */
     void prela() {
         h.resize(n);
-        up.resize(n, vector<int>());
+        up.resize(n, vector<int>(K));
         prela_dfs(0, 0, 0);
     }
 
