@@ -7,12 +7,8 @@ int ReduceRange(vector<T>& A) {
     vector<T> tmp = A;
     sort(tmp.begin(), tmp.end());
     tmp.erase(unique(tmp.begin(), tmp.end()), tmp.end());
-    unordered_map<T, int> uc;
-    REP(i, 0, tmp.size()) {
-        uc[tmp[i]] = i;
-    }
     for (auto& v : A) {
-        v = uc[v];
+        v = lower_bound(tmp.begin(), tmp.end(), v) - tmp.begin();
     }
     return tmp.size();
 }
