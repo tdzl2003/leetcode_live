@@ -17,7 +17,7 @@ T bsmax(T min, T max, F test) {
 }
 
 
-// 在[min,max]之间，寻找最小的满足test(t)为true的t，若全不满足，返回min；若全都满足，返回max+1
+// 在[min,max]之间，寻找最小的满足test(t)为true的t，若全都满足，返回min；若全不满足，返回max+1
 template<typename T, typename F>
 T bsmin(T min, T max, F test) {
     min--;
