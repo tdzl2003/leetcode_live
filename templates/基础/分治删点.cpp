@@ -2,7 +2,7 @@
 // 总计会调用 $O(NlgN)$ 次的 f和g
 
 void f(State& s, int i);
-void g(State& s, int i);
+void g(const State& s, int i);
 
 template <typename State, typename F, typename G>
 void divideconquer(const State& s, int l, int r, const F& f, const G& g) {
