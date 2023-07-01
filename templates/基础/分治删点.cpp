@@ -7,7 +7,7 @@ void g(const State& s, int i);
 template <typename State, typename F, typename G>
 void divideconquer(const State& s, int l, int r, const F& f, const G& g) {
     if (r == l + 1) {
-        G(s, l);
+        g(s, l);
         return;
     }
     int m = (r + l) / 2;
