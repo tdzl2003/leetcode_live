@@ -42,9 +42,9 @@ $$
 整理三个式子可以得到
 
 $$
-(x-2)F(x)+xF_a(x)+xF_b(x) = x \\
-F(x)-xL_x(a,a)F_a(x)-xL_x(b,a)F_b(x) = 0 \\
-F(x)-xL_x(a,b)F_a(x)-xL_x(b,b)F_b(x) = 0 \\
+(x-2)F(x)+xF_a(x)+xF_b(x) = x \\ \\
+F(x)-xL_x(a,a)F_a(x)-xL_x(b,a)F_b(x) = 0 \\ \\
+F(x)-xL_x(a,b)F_a(x)-xL_x(b,b)F_b(x) = 0 \\ \\
 $$
 
 解此线性方程组，可得到
